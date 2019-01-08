@@ -10,7 +10,7 @@ namespace gitsample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(palindrome(121));
+            Console.WriteLine(palindrome(141));
         }
         public static bool palindrome(int n)
         {

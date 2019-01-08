@@ -10,6 +10,29 @@ namespace gitsample
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(palindrome(121));
+        }
+        public static bool palindrome(int n)
+        {
+            bool flag = true;
+            int reverse = 0;
+            int rem;
+            int temp = n;
+            while (n > 0)
+            {
+
+                rem = n % 10;
+                reverse = reverse * 10 + rem;
+                n = n / 10;
+            }
+            if (temp == reverse)
+            {
+                return flag;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
